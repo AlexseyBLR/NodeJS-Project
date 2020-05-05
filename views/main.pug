@@ -1,0 +1,22 @@
+extends layout
+
+block head
+	script(src="https://code.jquery.com/jquery-3.5.0.min.js",
+		integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=",
+		crossorigin="anonymous")
+
+block content
+	p Welcome to #{title}
+
+	form(action="/back", method="get")
+		input(type="submit", value="First page")
+
+
+	form(action="/register", method="get")
+		input(type="text" placeholder="First name", name="firstNameIP")
+		input(type="text" placeholder="Last name", name="lastNameIP")
+		input(type="text" placeholder="Age", name="ageIP")
+		input(type="submit", value="Test")
+
+	input#testText(type="text", placeholder="Test", name=)
+	script(src="javascripts/ajaxTest.js")
